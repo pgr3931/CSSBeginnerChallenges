@@ -4,13 +4,155 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="shared.css" />
   <link rel="stylesheet" href="style.css" />
   <title>CSS Beginner Challenges</title>
 </head>
 
 <body>
   <main>
-    
+    <div class="title">
+      <h1>CSS Beginner Challenges</h1>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <h2>Selectors</h2>
+        <div class="lesson">
+          <code><span class="selector">div</span> {
+  <span class="comment">/* tag selector */</span>
+}
+</code>
+          <code><span class="selector">#id</span> {
+  <span class="comment">/* id selector */</span>
+}
+</code>
+          <code><span class="selector">.class</span> {
+  <span class="comment">/* class selector */</span>
+}
+</code>
+          <code><span class="selector">div.class</span> {
+  <span class="comment">/* tag with specific class */</span>
+}
+</code>
+          <code><span class="selector">div, span</span> {
+  <span class="comment">/* multiple tags */</span>
+}
+</code>
+          <code><span class="selector">*</span> {
+  <span class="comment">/* universal selector */</span>
+}
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Combinators</h2>
+        <div class="lesson">
+          <code><span class="selector">div span</span> {
+  <span class="comment">/* all span descendants
+     insides divs */</span>
+}
+</code>
+          <code><span class="selector">div > span</span> {
+  <span class="comment">/* all direct span
+    children inside divs */</span>
+}
+</code>
+          <code><span class="selector">div + span</span> {
+  <span class="comment">/* the first span after 
+    a div */</span>
+}
+</code>
+          <code><span class="selector">div ~ span</span> {
+  <span class="comment">/* all spans following
+    a div */</span>
+}
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Pseudo-classes</h2>
+        <div class="lesson">
+          <code><span class="selector">div:hover</span> {
+  <span class="comment">/* only on hover */</span>
+}
+</code>
+          <code><span class="selector">div:focus</span> {
+  <span class="comment">/* only when focused */</span>
+}
+</code>
+          <code><span class="selector">span:first-child</span> {
+  <span class="comment">/* the first span inside
+     another element */</span>
+}
+</code>
+          <code><span class="selector">span:last-child</span> {
+  <span class="comment">/* the last span inside
+     another element */</span>
+}
+</code>
+          <code><span class="selector">span:nth-child(n)</span> {
+  <span class="comment">/* the nth span inside
+     another element */</span>
+}
+</code>
+          <code><span class="selector">div:not(.class)</span> {
+  <span class="comment">/* all divs that are not 
+    part of .class */</span>
+}
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Pseudo-elements</h2>
+        <div class="lesson">
+          <code><span class="selector">div::before</span> {
+  <span class="comment">/* inserts content 
+    before an element */</span>
+}
+</code>
+          <code><span class="selector">div::after</span> {
+  <span class="comment">/* inserts content 
+    after an element */</span>
+}
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Functions</h2>
+        <div class="lesson">
+          <code><span class="selector">div</span> {
+  <span class="prop">height:</span> <span class="func">calc(</span>100% - 3px<span class="func">)</span>
+  <span class="comment">
+  /* calculates the height 
+  responsively */</span>
+}
+</code>
+          <code><span class="selector">div</span> {
+  <span class="prop">height:</span> <span class="func">min(</span>100%, 3px<span class="func">)</span>
+  <span class="comment">
+  /* uses the smaller value */</span>
+}
+</code>
+          <code><span class="selector">div</span> {
+  <span class="prop">height:</span> <span class="func">max(</span>100%, 3px<span class="func">)</span>
+  <span class="comment">
+  /* uses the larger value */</span>
+}
+</code>
+          <code><span class="selector">div</span> {
+  <span class="prop">color:</span> <span class="func">rgb(</span>0, 121, 194<span class="func">)</span>
+  <span class="comment">
+  /* a color as rgb */</span>
+}
+</code>
+        </div>
+      </div>
+      <div class="card start">
+        <a href="/task1/">
+          Start
+        </a>
+      </div>
+    </div>
   </main>
 </body>
 

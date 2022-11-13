@@ -1,0 +1,10 @@
+div {
+  height: 200px;
+  width: 200px;
+  padding: 20px;
+  background-color: rgba(139, 92, 246, 0.6);
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Your Code */
