@@ -69,26 +69,3 @@ span.func {
   align-items: center;
   justify-content: center;
 }
-
-a {
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  font-weight: 700;
-  background-image: linear-gradient(to right, #ec4899, #8b5cf6);
-  font-size: 50px;
-  transition: margin-left 0.2s;
-}
-
-a:hover {
-  margin-left: 10px;
-}
-
-a::after {
-  content: "\279C";
-  transition: padding-left 0.2s;
-}
-
-a:hover::after {
-  padding-left: 10px;
-}
